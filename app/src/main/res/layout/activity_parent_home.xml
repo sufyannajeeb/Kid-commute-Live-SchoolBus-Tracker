@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF7"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== Header ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/m_header"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="36dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/m_badge_dark"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_bus" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/m_logout_pill"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:drawablePadding="8dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="#212121"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Good to see you"
+                android:textColor="#6D5A00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Kid Commute"
+                android:textColor="#1C1C1C"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Safe rides, every day."
+                android:textColor="#6D5A00"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- ===== Floating live-tracking card ===== -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="-34dp"
+            android:layout_marginEnd="18dp">
+
+            <Button
+                android:id="@+id/buttonTrackBus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/m_track"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="12dp"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="48dp"
+                android:text="Track Bus Live\nSee where the bus is now"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="22dp"
+                android:text="›"
+                android:textColor="#FFC107"
+                android:textSize="32sp" />
+        </FrameLayout>
+
+        <!-- ===== Section: Commute ===== -->
+        <TextView
+            style="@style/MSection"
+            android:text="Commute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/button16"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_bus"
+                    android:text="Bus\nStatus" />
+            </FrameLayout>
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/button18"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_chat"
+                    android:text="Chat with\nAyaah" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- ===== Section: My child ===== -->
+        <TextView
+            style="@style/MSection"
+            android:text="My child" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/buttonStudent10"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_profile"
+                    android:text="Student\nProfile" />
+            </FrameLayout>
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/button15"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_bell"
+                    android:text="Notifi-\ncations" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- ===== Section: Messages & payments ===== -->
+        <TextView
+            style="@style/MSection"
+            android:text="Messages &amp; payments" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/button11"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_reply"
+                    android:text="View\nReply" />
+            </FrameLayout>
+
+            <FrameLayout style="@style/MTileBox">
+
+                <Button
+                    android:id="@+id/buttonAdminMsg11"
+                    style="@style/MTile"
+                    android:drawableTop="@drawable/ic_payment"
+                    android:text="Payment\nAlerts" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- ===== Fee & Pay (wide, accent) ===== -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="28dp">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/m_pay"
+                android:drawableStart="@drawable/ic_credit_card"
+                android:drawablePadding="12dp"
+                android:gravity="start|center_vertical"
+                android:paddingStart="20dp"
+                android:text="Bus Fee &amp; Pay"
+                android:textAllCaps="false"
+                android:textColor="#1C1C1C"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="22dp"
+                android:text="›"
+                android:textColor="#1C1C1C"
+                android:textSize="30sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

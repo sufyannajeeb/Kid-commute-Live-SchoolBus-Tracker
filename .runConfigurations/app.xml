@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App" selected="true">
+    <option name="DEPLOY" value="true" />
+    <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+    <option name="DEPLOY_AS_INSTANT" value="false" />
+    <option name="ARTIFACT_NAME" value="" />
+    <option name="PM_USER_TARGET_COMPONENT" value="com.example.kidcommute/.MainActivity" />
+    <option name="ACTIVITY_CLASS" value="com.example.kidcommute.MainActivity" />
+    <option name="MODE" value="default_activity" />
+    <option name="ALTERNATIVE_ACTIVITY_CLASS" value="" />
+    <option name="DEPLOY_PREVIEW_N_BUILD" value="false" />
+    <option name="GRADLE_MAVEN_ARTIFACT" value="" />
+    <option name="ANDROID_PROCESS_NAME" value="" />
+    <option name="POST_PROCESS" value="false" />
+    <option name="START_LAYOUT_EDITOR" value="false" />
+    <option name="ALLOW RaisePropertyChanged" value="false" />
+    <option name="ANDROID_RUN_AS_PROFILE" value="false" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

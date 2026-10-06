@@ -1,0 +1,151 @@
+<resources>
+
+    <!-- ============ Typography ============ -->
+    <style name="TextAppearance.KidCommute.Display" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.KidCommute.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.KidCommute.Section" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">@dimen/text_section</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.KidCommute.Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.KidCommute.Label" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <!-- ============ Buttons ============ -->
+    <style name="Widget.KidCommute.Button" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:paddingStart">@dimen/space_24</item>
+        <item name="android:paddingEnd">@dimen/space_24</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/selector_button_fill</item>
+    </style>
+
+    <!-- Dashboard tile: large icon stacked above a short label -->
+    <style name="Widget.KidCommute.Button.Tile">
+        <item name="android:layout_height">@dimen/tile_height</item>
+        <item name="android:minHeight">@dimen/tile_height</item>
+        <item name="android:paddingStart">@dimen/space_8</item>
+        <item name="android:paddingEnd">@dimen/space_8</item>
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/brand_primary</item>
+    </style>
+
+    <style name="Widget.KidCommute.Button.Outlined" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:background">@drawable/roundedit</item>
+    </style>
+
+    <!-- ============ Cards ============ -->
+    <style name="Widget.KidCommute.Card" parent="CardView">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+    </style>
+
+    <style name="Widget.KidCommute.Card.Brand" parent="Widget.KidCommute.Card">
+        <item name="cardBackgroundColor">@color/brand_primary</item>
+    </style>
+
+    <!-- ============ Inputs ============ -->
+    <style name="Widget.KidCommute.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/selector_field_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textColorHint">@color/on_surface_variant</item>
+    </style>
+
+    <!-- ============ Parent home ============ -->
+    <style name="KcTile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/card_bg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/kc_dark</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============ M parent home ============ -->
+    <style name="MSection">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textColor">#1C1C1C</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MTileBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">124dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="MTile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/m_card</item>
+        <item name="android:gravity">bottom|start</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#1C1C1C</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableTint">#1C1C1C</item>
+    </style>
+
+    <style name="MBadge">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_margin">14dp</item>
+        <item name="android:background">@drawable/m_badge_soft</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ============ Misc ============ -->
+    <style name="Widget.KidCommute.Divider" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/outline</item>
+    </style>
+</resources>

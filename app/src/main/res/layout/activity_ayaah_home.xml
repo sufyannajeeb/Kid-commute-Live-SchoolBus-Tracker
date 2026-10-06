@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/busbg"
+    tools:context=".ayaah_home">
+
+  <TextView
+      android:id="@+id/textView23"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:text="Ayaah Home"
+      android:textColor="@color/purple_200"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/buttonAyaah9"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="130dp"
+      android:layout_marginTop="70dp"
+      android:layout_marginEnd="130dp"
+      android:text="View profile"
+      android:background="@drawable/mybutton1"
+
+
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+  <Button
+      android:id="@+id/buttonMessageToParent10"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="130dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="130dp"
+      android:text="Msg parent"
+      android:background="@drawable/mybutton1"
+
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonAyaah9" />
+
+  <Button
+      android:id="@+id/buttonAyyahLogout11"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="130dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginEnd="130dp"
+      android:background="#FF0000"
+      android:text="Logout"
+      android:textColor="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonMessageToParent10" />
+
+  <Button
+      android:id="@+id/buttonQR19"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="130dp"
+      android:layout_marginTop="17dp"
+      android:layout_marginEnd="130dp"
+      android:layout_marginBottom="15dp"
+      android:text="Qr Scanner"
+      android:background="@drawable/mybutton1"
+
+      app:layout_constraintBottom_toTopOf="@+id/buttonAyyahLogout11"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonMessageToParent10" />
+
+    <Button
+        android:id="@+id/buttonChat18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/mybutton1"
+        android:text="Chat"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="471dp" />
+
+</android.support.constraint.ConstraintLayout>

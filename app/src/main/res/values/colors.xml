@@ -1,0 +1,33 @@
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand -->
+    <color name="brand_primary">#FF2F6FED</color>
+    <color name="brand_primary_dark">#FF1B4FC0</color>
+    <color name="brand_primary_light">#FFDCE7FF</color>
+    <color name="brand_secondary_light">#FFFFE7C2</color>
+
+    <!-- Neutrals -->
+    <color name="neutral_100">#FFF4F6FA</color>
+    <color name="neutral_300">#FFD8DEE9</color>
+    <color name="neutral_400">#FFB6BECB</color>
+    <color name="neutral_900">#FF10131A</color>
+
+    <!-- Parent home (KidCommute yellow theme) -->
+    <color name="kc_yellow">#FFC107</color>
+    <color name="kc_yellow_dark">#FFA000</color>
+    <color name="kc_yellow_light">#FFF8E1</color>
+    <color name="kc_dark">#263238</color>
+    <color name="kc_white">#FFFFFF</color>
+
+    <!-- Content -->
+    <color name="on_surface">#FF1A1C22</color>
+    <color name="on_surface_variant">#FF5A6072</color>
+    <color name="outline">#FFC7CDDA</color>
+</resources>

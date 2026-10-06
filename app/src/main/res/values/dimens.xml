@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing scale -->
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+
+    <dimen name="screen_margin">20dp</dimen>
+    <dimen name="card_radius">20dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="card_stroke">1dp</dimen>
+    <dimen name="card_list_gap">12dp</dimen>
+
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="button_radius">14dp</dimen>
+    <dimen name="button_icon">22dp</dimen>
+    <dimen name="tile_height">104dp</dimen>
+    <dimen name="tile_icon">28dp</dimen>
+
+    <dimen name="input_radius">14dp</dimen>
+
+    <dimen name="avatar_size">112dp</dimen>
+    <dimen name="icon_sm">18dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_display">28sp</dimen>
+    <dimen name="text_title">22sp</dimen>
+    <dimen name="text_section">17sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_label">13sp</dimen>
+</resources>
