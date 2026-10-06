@@ -1,33 +1,42 @@
-🚌 School Bus Live Tracking System
+# 🚌 School Bus Live Tracking System
 
-A complete School Bus Live Tracking and Management System designed to improve the safety, communication, and management of school transportation.
+A complete **School Bus Live Tracking and Management System** designed to improve the safety, communication, and management of school transportation.
 
-The system consists of an Admin Web Application and an Android Mobile Application used by Drivers, Ayahs, and Parents.
+The system consists of an **Admin Web Application** and **Android Applications** for **Drivers, Ayahs, and Parents**.
 
-Parents can track their child’s school bus live based on the driver’s current location, while Ayahs and Parents can communicate through an in-app chat system. The Admin can manage students, buses, drivers, allocations, complaints, and monitor buses in real time.
+Parents can track their child's school bus live based on the driver's current GPS location, while Ayahs and Parents can communicate through an in-app chat system. Administrators can manage students, buses, drivers, allocations, complaints, and monitor buses in real time.
 
-⸻
+---
 
-📌 Project Overview
+## 📌 Project Overview
 
-The School Bus Live Tracking System provides a centralized platform for managing school transportation and enabling real-time communication between:
+The School Bus Live Tracking System provides a centralized platform connecting:
 
-* 👨‍💼 Admin
-* 🚌 Driver
-* 👩‍🏫 Ayah
-* 👨‍👩‍👧 Parent
+* 👨‍💼 **Admin**
+* 🚌 **Driver**
+* 👩‍🏫 **Ayah**
+* 👨‍👩‍👧 **Parent**
 
-The main purpose of the system is to provide live school bus tracking, better communication between parents and bus staff, and efficient transportation management.
+### 🎯 Main Goals
 
-⸻
+* Provide real-time school bus tracking
+* Improve student transportation safety
+* Allow parents to monitor their child's bus
+* Enable communication between Parents and Ayahs
+* Allow administrators to manage transportation efficiently
+* Provide bus status updates
+* Manage student and bus allocations
+* Reduce dependency on manual communication
 
-✨ Key Features
+---
 
-👨‍💼 Admin Web Application
+# ✨ Key Features
 
-The Admin uses a web-based application to manage the complete school transportation system.
+## 👨‍💼 Admin Web Application
 
-Admin Features
+The Admin Web Application provides centralized management of the school transportation system.
+
+### Admin Features
 
 * 🔐 Admin Login
 * 👨‍🎓 Register and manage students
@@ -41,132 +50,126 @@ Admin Features
 * 📍 View live bus locations
 * 📊 Monitor bus status
 * 📝 View driver-updated bus status
-* 💬 Manage/monitor communication where applicable
 * ⚠️ View and manage parent complaints
 * 🗂️ Manage transportation records
 
-The Admin acts as the central authority for the entire system.
+---
 
-⸻
+# 🚌 Driver Android Application
 
-🚌 Driver Android Application
+The Driver Android Application is used during the school bus trip.
 
-The Driver uses the Android application during the bus trip.
-
-Driver Features
+### Driver Features
 
 * 🔐 Driver Login
 * 🚌 View assigned bus
-* 🗺️ Share current location
+* 🗺️ Share current GPS location
 * 📍 Continuously provide location for live tracking
-* 📝 Manually update bus status
-* 📤 Send bus status updates to Admin
+* 📝 Update bus status
+* 📤 Send bus status updates
 * 👨‍🎓 View assigned students
 * 👩‍🏫 View assigned Ayah information
 
-The driver’s current location is used as the primary location source for the live bus tracking system.
+The driver's current location acts as the primary location source for live bus tracking.
 
-⸻
+---
 
-👩‍🏫 Ayah Android Application
+# 👩‍🏫 Ayah Android Application
 
-The Ayah uses the Android application to assist students during transportation.
+The Ayah application helps staff assist students during transportation.
 
-Ayah Features
+### Ayah Features
 
 * 🔐 Ayah Login
 * 🚌 View assigned bus
 * 👨‍🎓 View assigned students
-* 📍 Access relevant bus/trip information
+* 📍 View relevant bus/trip information
 * 💬 Chat with parents
 * 📩 Send messages to parents
 * 🔔 Receive messages from parents
 
-The Ayah can communicate directly with parents regarding students and transportation.
+---
 
-⸻
+# 👨‍👩‍👧 Parent Android Application
 
-👨‍👩‍👧 Parent Android Application
+The Parent Application allows parents to monitor their child's transportation.
 
-The Parent application allows parents to monitor their child’s school transportation.
-
-Parent Features
+### Parent Features
 
 * 🔐 Parent Login
 * 👨‍🎓 View child/student information
 * 🚌 View assigned bus
-* 📍 Track the school bus live
-* 🗺️ View the bus driver’s current location
-* 💬 Chat with the Ayah
-* 📩 Send/receive messages
+* 📍 Track school bus live
+* 🗺️ View driver's current location
+* 💬 Chat with Ayah
+* 📩 Send and receive messages
 * ⚠️ Submit complaints
-* 📝 Report transportation-related issues
+* 📝 Report transportation issues
 * 🚌 View bus status
 
-The parent does not need to depend on phone calls to know the location of the bus. The application provides the current bus location based on the driver’s shared location.
+Parents can check the current bus location through the application instead of depending on phone calls.
 
-⸻
+---
 
-📍 Live Bus Tracking
+# 📍 Live Bus Tracking
 
-One of the main features of the system is real-time school bus tracking.
+One of the main features of the project is **real-time school bus tracking**.
 
-The Driver’s Android application obtains the driver’s location and sends the location to the backend.
+### How It Works
 
-The Parent application retrieves the latest location and displays the bus on the map.
+```text
+┌─────────────────────────┐
+│    Driver Android App   │
+│                         │
+│      📍 GPS Location    │
+└────────────┬────────────┘
+             │
+             │ Live Location
+             ▼
+┌─────────────────────────┐
+│        Backend          │
+│                         │
+│ Store / Process         │
+│ Bus Location            │
+└────────────┬────────────┘
+             │
+             │ Latest Location
+             ▼
+┌─────────────────────────┐
+│    Parent Android App   │
+│                         │
+│    🚌 Live Bus Map      │
+└─────────────────────────┘
+```
 
-┌──────────────────────┐
-│   Driver Android App │
-│                      │
-│   GPS Location       │
-└──────────┬───────────┘
-           │
-           │ Live Location
-           ▼
-┌──────────────────────┐
-│       Backend        │
-│                      │
-│ Store/Process        │
-│ Bus Location         │
-└──────────┬───────────┘
-           │
-           │ Latest Location
-           ▼
-┌──────────────────────┐
-│   Parent Android App │
-│                      │
-│   🚌 Live Bus        │
-│      Location        │
-└──────────────────────┘
-
-Tracking Flow
+### Tracking Flow
 
 1. Driver logs into the application.
 2. Driver starts the bus trip.
-3. The application obtains the driver’s location.
+3. The application obtains the driver's GPS location.
 4. Location information is sent to the backend.
-5. The backend updates the bus’s current location.
+5. Backend updates the bus's current location.
 6. Parent application receives the latest location.
-7. Parent can view the bus moving on the map.
+7. Parent views the bus moving on the map.
+8. Admin can also monitor the current bus location.
 
-The Admin can also view the current location of buses.
+---
 
-⸻
+# 💬 Parent–Ayah Chat
 
-💬 Parent–Ayah Chat
+The system provides direct communication between Parents and Ayahs.
 
-The system provides communication between Parents and Ayahs.
-
-This allows parents to communicate regarding transportation and their child without having to make a separate phone call.
-
-Chat Features
+### Chat Features
 
 * 💬 Send messages
 * 📩 Receive messages
-* 👩‍🏫 Ayah ↔ Parent communication
+* 👩‍🏫 Parent ↔ Ayah communication
 * 🕐 Conversation history
-* 🔔 Message notifications (if implemented)
+* 🔔 Message notifications *(if implemented)*
 
+### Communication Flow
+
+```text
 Parent App
      │
      │ Message
@@ -177,55 +180,54 @@ Parent App
        │
        │ Message
        ▼
-  Ayah App
+   Ayah App
+```
 
-⸻
+---
 
-📝 Bus Status Updates
+# 📝 Bus Status Updates
 
-The Driver can manually update the current status of the bus.
+Drivers can manually update the current bus status.
 
-For example, the Driver can type a status/message and send it to the system.
+Example:
 
+```text
 Driver
-  │
-  │ Types bus status
-  ▼
-"Bus delayed due to traffic"
-  │
-  ▼
+   │
+   │ "Bus delayed due to traffic"
+   ▼
 Backend
-  │
-  ▼
+   │
+   ▼
 Admin
+```
 
-This allows the Admin to monitor important updates from the driver.
-
-Possible status examples:
+### Possible Bus Statuses
 
 * 🟢 Bus Started
 * 🚌 Bus On Route
 * ⏸️ Bus Stopped
 * 🚦 Delayed
 * 🏁 Trip Completed
-* ⚠️ Other custom status
+* ⚠️ Custom Status
 
-⸻
+---
 
-⚠️ Complaint Management
+# ⚠️ Complaint Management
 
-Parents can report transportation-related complaints through the Parent application.
+Parents can submit transportation-related complaints through the Parent Application.
 
-Examples include:
+### Complaint Types
 
-* Bus-related problems
-* Driver-related concerns
-* Delay complaints
-* Student transportation issues
-* Other transportation-related issues
+* 🚌 Bus-related problems
+* 👨‍✈️ Driver-related concerns
+* ⏱️ Delay complaints
+* 👨‍🎓 Student transportation issues
+* ⚠️ Other transportation-related issues
 
-The complaint is submitted to the system and can be reviewed and managed by the Admin.
+### Complaint Flow
 
+```text
 Parent
    │
    │ Submit Complaint
@@ -237,143 +239,149 @@ Admin Web Application
    │
    ▼
 Complaint Management
+```
 
-⸻
+---
 
-👨‍🎓 Student Allocation
+# 👨‍🎓 Student Allocation
 
-The Admin manages which students are assigned to which buses.
+The Admin can allocate students to their appropriate buses and transportation staff.
 
-Admin
-  │
-  ├── Student
-  │
-  ├── Bus
-  │
-  ├── Driver
-  │
-  └── Ayah
-       │
-       ▼
-   Allocation
+```text
+                 Admin
+                   │
+        ┌──────────┼──────────┐
+        ▼          ▼          ▼
+     Student      Bus       Staff
+                            │
+                       ┌────┴────┐
+                       ▼         ▼
+                    Driver      Ayah
+                       │         │
+                       └────┬────┘
+                            ▼
+                       Allocation
+```
 
-The allocation system allows the Admin to associate students with their appropriate bus and transportation staff.
+The allocation information can then be accessed by the Parent, Driver, and Ayah applications.
 
-This information can then be used by the Parent, Driver, and Ayah applications.
+---
 
-⸻
+# 🏗️ System Architecture
 
-🏗️ System Architecture
-
+```text
                     SCHOOL BUS SYSTEM
                            │
-              ┌────────────┴────────────┐
-              │                         │
-              ▼                         ▼
-       ADMIN WEB APP             ANDROID APP
-              │                         │
-              │              ┌──────────┼──────────┐
-              │              │          │          │
-              │              ▼          ▼          ▼
-              │           Driver      Ayah      Parent
-              │              │          │          │
-              │              │          │          │
-              └──────────────┴──────────┴──────────┘
-                             │
-                             ▼
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+      ADMIN WEB APP                ANDROID APPS
+             │                           │
+             │              ┌────────────┼────────────┐
+             │              │            │            │
+             │              ▼            ▼            ▼
+             │           Driver         Ayah        Parent
+             │              │            │            │
+             └──────────────┴────────────┴────────────┘
+                            │
+                            ▼
                        Backend / API
-                             │
-                             ▼
-                          Database
+                            │
+                            ▼
+                         Database
+```
 
-⸻
+---
 
-🔄 Complete System Flow
+# 🔄 Complete System Flow
 
+```text
                          ADMIN
                            │
-          ┌────────────────┼────────────────┐
-          │                │                │
-          ▼                ▼                ▼
-       Students          Buses           Staff
-          │                │          ┌─────┴─────┐
-          │                │          │           │
-          │                │        Driver       Ayah
-          │                │          │           │
-          └────────────────┼──────────┴───────────┘
-                           │
-                           ▼
-                       Allocation
-                           │
-                           ▼
-                    Driver Starts Trip
-                           │
-                           ▼
-                     Driver GPS
-                           │
-                           ▼
-                      Backend
-                           │
-                  ┌────────┴────────┐
-                  │                 │
-                  ▼                 ▼
-                Admin             Parent
-                  │                 │
-                  │                 ▼
-                  │           Live Bus Map
-                  │
-                  ▼
-              Monitoring
+            ┌──────────────┼──────────────┐
+            │              │              │
+            ▼              ▼              ▼
+        Students          Buses          Staff
+                                         │
+                                  ┌──────┴──────┐
+                                  │             │
+                                Driver         Ayah
+                                  │             │
+                                  └──────┬──────┘
+                                         │
+                                         ▼
+                                     Allocation
+                                         │
+                                         ▼
+                                  Driver Starts Trip
+                                         │
+                                         ▼
+                                     Driver GPS
+                                         │
+                                         ▼
+                                      Backend
+                                         │
+                              ┌──────────┴──────────┐
+                              │                     │
+                              ▼                     ▼
+                            Admin                 Parent
+                              │                     │
+                              │                     ▼
+                              │               Live Bus Map
+                              │
+                              ▼
+                          Monitoring
+```
 
-⸻
+---
 
-📱 Applications
+# 📱 Applications
 
-User	Platform	Main Purpose
-👨‍💼 Admin	Web	Complete system management
-🚌 Driver	Android	Location sharing & bus status
-👩‍🏫 Ayah	Android	Student assistance & parent communication
-👨‍👩‍👧 Parent	Android	Live bus tracking & communication
+| User            | Platform | Main Purpose                       |
+| --------------- | -------- | ---------------------------------- |
+| 👨‍💼 Admin     | Web      | Complete transportation management |
+| 🚌 Driver       | Android  | GPS location sharing & bus status  |
+| 👩‍🏫 Ayah      | Android  | Student assistance & communication |
+| 👨‍👩‍👧 Parent | Android  | Live bus tracking & communication  |
 
-⸻
+---
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-Web Application
+## 🌐 Web Application
 
 * HTML
 * CSS
 * JavaScript
 * Web-based Admin Dashboard
 
-Android Applications
+## 📱 Android Applications
 
 * Dart
 * Flutter
 
-Backend
+## ⚙️ Backend
 
 * JavaScript
 * API-based communication
 
-Core Technologies
+## 🔧 Core Technologies
 
 * GPS / Geolocation
-* Real-time/near-real-time location updates
+* Real-time / Near-real-time location updates
 * REST APIs
 * Database
-* Map integration
+* Map Integration
 * Authentication
-* Chat/Communication system
+* Chat / Communication System
 
-Update the backend/database/map technology names here according to the final implementation.
+> **Note:** Update the backend, database, and map technology names according to the final implementation.
 
-⸻
+---
 
-📂 Project Structure
+# 📂 Project Structure
 
-A possible high-level structure is:
-
+```text
 School-Bus-Live-Tracking/
 │
 ├── admin/
@@ -403,14 +411,15 @@ School-Bus-Live-Tracking/
 │
 ├── README.md
 └── .gitignore
+```
 
-⸻
+---
 
-🔐 Security
+# 🔐 Security
 
 The system should ensure that transportation information is accessible only to authorized users.
 
-Important security considerations include:
+### Security Considerations
 
 * 🔐 Secure login
 * 👥 Role-based access
@@ -423,26 +432,24 @@ Important security considerations include:
 
 Parents should only be able to access information related to their registered child/student.
 
-⸻
+---
 
-🎯 Objectives
+# 🎯 Objectives
 
-The main objectives of the project are:
+1. Provide live school bus tracking.
+2. Improve student transportation safety.
+3. Allow parents to monitor their child's bus.
+4. Provide direct communication between Parents and Ayahs.
+5. Allow Admins to efficiently manage school transportation.
+6. Allow Drivers to share their live location.
+7. Provide a platform for reporting transportation complaints.
+8. Provide real-time bus status information.
+9. Maintain student, bus, driver, and Ayah allocations.
+10. Reduce dependency on manual communication.
 
-1. To provide live school bus tracking.
-2. To improve student transportation safety.
-3. To allow parents to monitor their child’s bus.
-4. To provide direct communication between parents and Ayahs.
-5. To allow Admins to efficiently manage school transportation.
-6. To allow Drivers to share their live location.
-7. To provide a platform for reporting transportation complaints.
-8. To provide real-time bus status information.
-9. To maintain student, bus, driver, and Ayah allocations.
-10. To reduce dependency on manual communication.
+---
 
-⸻
-
-🌟 Advantages
+# 🌟 Advantages
 
 * ✅ Real-time bus tracking
 * ✅ Easy student allocation
@@ -455,9 +462,9 @@ The main objectives of the project are:
 * ✅ Improved transportation transparency
 * ✅ Better parent awareness and safety
 
-⸻
+---
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
 Possible future improvements include:
 
@@ -466,7 +473,7 @@ Possible future improvements include:
 * 🗺️ Route visualization
 * 📍 Geofencing
 * 🚏 Bus-stop notifications
-* 🚨 Emergency/SOS functionality
+* 🚨 Emergency / SOS functionality
 * 📊 Trip history and analytics
 * 📈 Transportation reports
 * 🔋 Driver device/battery monitoring
@@ -475,22 +482,26 @@ Possible future improvements include:
 * 🚌 Multiple route management
 * 🗺️ Historical bus route playback
 
-⸻
+---
 
-👨‍💻 Project Information
+# 👨‍💻 Project Information
 
-Project Name: School Bus Live Tracking System
+### Project Name
 
-Project Type: School Transportation Management & Live Tracking System
+**School Bus Live Tracking System**
 
-Platforms:
+### Project Type
 
-* Web — Admin
-* Android — Driver
-* Android — Ayah
-* Android — Parent
+**School Transportation Management & Live Tracking System**
 
-Technologies:
+### Platforms
+
+* 🌐 Web — Admin
+* 📱 Android — Driver
+* 📱 Android — Ayah
+* 📱 Android — Parent
+
+### Technologies
 
 * Dart / Flutter
 * JavaScript
@@ -501,27 +512,39 @@ Technologies:
 * GPS / Location Services
 * Map Services
 
-Developed By: Sufyan Najeeb
+### Developed By
 
-⸻
+**Sufyan Najeeb**
 
-📄 License
+---
 
-This project is developed for educational purposes.
+# 📄 License
 
-Add an appropriate open-source license if the project is intended to be publicly distributed.
+This project is developed for **educational purposes**.
 
-⸻
+If this project is intended for public distribution, an appropriate open-source license can be added.
 
-⭐ Project Highlights
+---
 
-🚌 Live School Bus Tracking
-📍 Driver GPS-Based Location
-👨‍💼 Admin Web Management
-👨‍👩‍👧 Parent Android Application
-👩‍🏫 Ayah Android Application
-🚌 Driver Android Application
-💬 Parent–Ayah Chat
-⚠️ Complaint Management
-📝 Driver Bus Status Updates
-👨‍🎓 Student–Bus Allocation
+# ⭐ Project Highlights
+
+| Feature                             | Status |
+| ----------------------------------- | ------ |
+| 🚌 Live School Bus Tracking         | ✅      |
+| 📍 Driver GPS-Based Location        | ✅      |
+| 👨‍💼 Admin Web Management          | ✅      |
+| 👨‍👩‍👧 Parent Android Application | ✅      |
+| 👩‍🏫 Ayah Android Application      | ✅      |
+| 🚌 Driver Android Application       | ✅      |
+| 💬 Parent–Ayah Chat                 | ✅      |
+| ⚠️ Complaint Management             | ✅      |
+| 📝 Driver Bus Status Updates        | ✅      |
+| 👨‍🎓 Student–Bus Allocation        | ✅      |
+
+---
+
+## 🚀 Project Vision
+
+The goal of this project is to create a **safer, smarter, and more connected school transportation system** by combining live GPS tracking, centralized management, mobile applications, and real-time communication.
+
+**🚌 Track. Communicate. Manage. Travel Safely.**
